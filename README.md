@@ -33,14 +33,6 @@ output.txt: input.txt
 
 ### How did you make the picture?
 
-Using [lindenb/makefile2graph](https://github.com/lindenb/makefile2graph).
-After it is installed, do:
-
-```
-make -Bnd | ../../makefile2graph/make2graph | dot -Tpng -o pics/out.png
-```
-
-Note that `../../makefile2graph/make2graph` is my personal relative path
-to the executable. You probably need to change it to your own relative
-path.
+Using `make pic` (also part of the `Makefile`),
+which uses [lindenb/makefile2graph](https://github.com/lindenb/makefile2graph).
 
