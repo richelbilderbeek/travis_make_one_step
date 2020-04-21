@@ -10,7 +10,7 @@ of a pipeline of one step.
 
 ## Explanation
 
-![](out.png)
+![](pics/out.png)
 
 First, we specify in the `Makefile` that when we do `make`, the
 success is dependent on `output.txt`:
@@ -37,7 +37,7 @@ Using [lindenb/makefile2graph](https://github.com/lindenb/makefile2graph).
 After it is installed, do:
 
 ```
-make -Bnd | ../../makefile2graph/make2graph | dot -Tpng -o out.png
+make -Bnd | ../../makefile2graph/make2graph | dot -Tpng -o pics/out.png
 ```
 
 Note that `../../makefile2graph/make2graph` is my personal relative path
