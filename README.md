@@ -10,6 +10,8 @@ of a pipeline of one step.
 
 ## Explanation
 
+![](out.png)
+
 First, we specify in the `Makefile` that when we do `make`, the
 success is dependent on `output.txt`:
 
@@ -26,4 +28,19 @@ output.txt: input.txt
 	cp input.txt output.txt
 	echo "is cool" >> output.txt
 ```
+
+## FAQ
+
+### How did you make the picture?
+
+Using [lindenb/makefile2graph](https://github.com/lindenb/makefile2graph).
+After it is installed, do:
+
+```
+make -Bnd | ../../makefile2graph/make2graph | dot -Tpng -o out.png
+```
+
+Note that `../../makefile2graph/make2graph` is my personal relative path
+to the executable. You probably need to change it to your own relative
+path.
 
